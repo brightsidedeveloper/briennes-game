@@ -33,7 +33,7 @@ function App() {
   }, [autoTaps, multiplier])
 
   return (
-    <div className="flex flex-col gap-4 items-center p-4 h-dvh">
+    <div className="flex flex-col gap-4 items-center p-8 h-dvh">
       <h1 className="text-4xl font-bold text-red-500">Welcome to DCTR</h1>
       <p className="text-lg text-center text-blue-500">
         <span className="font-bold underline text-green-500">Brienne's</span> personal daily cat tap routine!
