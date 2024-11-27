@@ -58,11 +58,11 @@ function App() {
           <p>Auto Taps: {autoTaps}</p>
         </div>
 
-        <button className="hover:scale-105 " onClick={() => setCount((curr) => curr + 1 * multiplier)}>
+        <button className="hover:scale-105 my-auto" onClick={() => setCount((curr) => curr + 1 * multiplier)}>
           <img src="/cat.jpg" alt="logo" className="rounded-2xl shadow-2xl w-44" />
         </button>
 
-        <div className="w-full mt-auto">
+        <div className="w-full">
           <h3 className="text-md font-semibold">Upgrades:</h3>
           <div className="grid grid-cols-2 gap-4">
             <button onClick={buyTapMulti}>
