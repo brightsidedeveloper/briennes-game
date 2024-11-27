@@ -76,21 +76,23 @@ function App() {
         </div>
       </div>
       {startOver && (
-        <div className="fixed z-10 inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div className="fixed z-10 inset-0 bg-black bg-opacity-50 gap-20 flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold text-white">Restart the game?</h1>
 
-          <button onClick={() => setStartOver(false)} className="bg-red-500 text-white px-4 py-2 rounded-md">
-            No
-          </button>
-          <button
-            onClick={() => {
-              localStorage.setItem('count', '0')
-              window.location.reload()
-            }}
-            className="bg-green-500 text-white px-4 py-2 rounded-md"
-          >
-            Yes
-          </button>
+          <div className="flex items-center justify-center gap-10">
+            <button onClick={() => setStartOver(false)} className="bg-red-500 text-white px-4 py-2 rounded-md">
+              No
+            </button>
+            <button
+              onClick={() => {
+                localStorage.setItem('count', '0')
+                window.location.reload()
+              }}
+              className="bg-green-500 text-white px-4 py-2 rounded-md"
+            >
+              Yes
+            </button>
+          </div>
         </div>
       )}
     </>
